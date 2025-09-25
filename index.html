@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heaven's Bakery - Artisan Breads & Pastries</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Heaven's Bakery</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#menu" class="nav-link">Menu</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Artisan Breads & Pastries</h1>
+            <p class="hero-subtitle">Handcrafted with love, baked to perfection every morning</p>
+            <button class="cta-button" onclick="scrollToSection('menu')">Explore Our Menu</button>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <h2 class="section-title">Our Story</h2>
+                    <p class="about-text">
+                        For over three decades, Heaven's Bakery has been crafting exceptional breads and pastries using traditional techniques passed down through generations. Our master bakers start before dawn, ensuring every loaf is baked fresh daily.
+                    </p>
+                    <p class="about-text">
+                        We source only the finest ingredients - organic flours, European butter, and locally sourced eggs - to create the authentic flavors that have made us a beloved neighborhood institution.
+                    </p>
+                    <div class="stats">
+                        <div class="stat">
+                            <h3>30+</h3>
+                            <p>Years of Excellence</p>
+                        </div>
+                        <div class="stat">
+                            <h3>50+</h3>
+                            <p>Daily Fresh Items</p>
+                        </div>
+                        <div class="stat">
+                            <h3>1000+</h3>
+                            <p>Happy Customers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="/api/placeholder/600/400" alt="Bakery Interior" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2 class="section-title">Our Menu</h2>
+            <div class="menu-filters">
+                <button class="filter-btn active" data-filter="all">All Items</button>
+                <button class="filter-btn" data-filter="breads">Breads</button>
+                <button class="filter-btn" data-filter="pastries">Pastries</button>
+                <button class="filter-btn" data-filter="cakes">Cakes</button>
+            </div>
+            <div class="menu-grid" id="menu-grid">
+                <!-- Breads -->
+                <div class="menu-item" data-category="breads">
+                    <div class="menu-item-image">
+                        <img src="/api/placeholder/300/200" alt="Artisan Sourdough" />
+                        <div class="menu-item-overlay">
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Artisan Sourdough</h3>
+                        <p>Traditional sourdough with a perfect crust and tangy flavor</p>
+                        <span class="price">Rs.200</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="breads">
+                    <div class="menu-item-image">
+                        <img src="/api/placeholder/300/200" alt="Multigrain Loaf" />
+                        <div class="menu-item-overlay">
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Multigrain Loaf</h3>
+                        <p>Hearty blend of seeds and grains for a nutritious start</p>
+                        <span class="price">Rs.175</span>
+                    </div>
+                </div>
+
+                <!-- Pastries -->
+                <div class="menu-item" data-category="pastries">
+                    <div class="menu-item-image">
+                        <img src="/api/placeholder/300/200" alt="Chocolate Croissant" />
+                        <div class="menu-item-overlay">
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Chocolate Croissant</h3>
+                        <p>Buttery, flaky pastry filled with rich dark chocolate</p>
+                        <span class="price">Rs.225</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="pastries">
+                    <div class="menu-item-image">
+                        <img src="/api/placeholder/300/200" alt="Almond Danish" />
+                        <div class="menu-item-overlay">
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Almond Danish</h3>
+                        <p>Delicate pastry topped with sliced almonds and sweet glaze</p>
+                        <span class="price">Rs.300</span>
+                    </div>
+                </div>
+
+                <!-- Cakes -->
+                <div class="menu-item" data-category="cakes">
+                    <div class="menu-item-image">
+                        <img src="/api/placeholder/300/200" alt="Red Velvet Cake" />
+                        <div class="menu-item-overlay">
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Red Velvet Cake</h3>
+                        <p>Classic red velvet with cream cheese frosting</p>
+                        <span class="price">Rs.595</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="cakes">
+                    <div class="menu-item-image">
+                        <img src="/api/placeholder/300/200" alt="Vanilla Bean Cake" />
+                        <div class="menu-item-overlay">
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Vanilla Bean Cake</h3>
+                        <p>Moist vanilla cake with Madagascar vanilla bean frosting</p>
+                        <span class="price">Rs.375</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2 class="section-title">Visit Us</h2>
+                    <div class="contact-item">
+                        <h3>Address</h3>
+                        <p>301 Chaat Bazaar lane<br>Connaught PLace<br>New Delhi-110001</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Hours</h3>
+                        <p>Monday - Friday: 6:00 AM - 8:00 PM<br>Saturday - Sunday: 7:00 AM - 9:00 PM</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Contact</h3>
+                        <p>Phone: +91 98765 43210<br>Email: contact@heavensbakery.com</p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Order Online</h3>
+                    <form id="order-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="order" name="order" placeholder="Your Order Details" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Place Order</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Heaven's Bakery</h3>
+                    <p>Crafting exceptional breads and pastries since 1990</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#menu">Menu</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Heaven's Bakery. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
